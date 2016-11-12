@@ -1,0 +1,19 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Markov Jesus{% endblock %}
+
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+{% endblock %}
+
+
+
+{% block content %}
+<div class="jumbotron vertical-center">
+  <div class="container text-center">
+    {% block main %}
+    {% endblock %}
+  </div>
+</div>
+{% endblock %}
